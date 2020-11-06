@@ -1,26 +1,14 @@
-import 'react-app-polyfill/ie9'; // For IE 9-11 support
-import 'react-app-polyfill/ie11'; // For IE 11 support
-import './polyfill'
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './assets/fonts/red-hat.css';
-import './assets/scss/override.scss';
-import './assets/scss/new-stylling.scss';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Route, BrowserRouter } from "react-router-dom";
 
-//import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import $ from 'jquery';
-window.jQuery = $;
-window.$ = $;
-global.jQuery = $;
+import "./index.css";
+import App from "./App";
 
+// App Render
 ReactDOM.render(
-  <App/>,
-  document.getElementById('root')
+    <BrowserRouter basename={"/"}>
+        <Route path="/" component={App} />
+    </BrowserRouter>,
+    document.getElementById("root")
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();

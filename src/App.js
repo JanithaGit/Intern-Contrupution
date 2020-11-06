@@ -1,63 +1,63 @@
-import React, {Component} from 'react';
-import {BrowserRouter, Redirect, Switch} from 'react-router-dom';
-// import { renderRoutes } from 'react-router-config';
-import Loadable from 'react-loadable';
-import './App.scss';
-import {ToastContainer} from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-import {BASE_ROUTE} from "./Constants/Constants";
-import UnauthenticatedRoute from "./Components/RouteGuards/UnauthenticatedRoute";
-import AuthenticatedRoute from "./Components/RouteGuards/AuthenticatedRoute";
+import React from "react";
+import { Route, Switch} from "react-router-dom";
+import Page from "react-page-loading";
 
-const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
+//Package CSS
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "animate.css/animate.min.css";
 
-// Containersz
-const DefaultLayout = Loadable({
-  loader: () => import('./containers/DefaultLayout'),
-  loading
-});
+//Template SCSS Style
+import "./assets/scss/style.scss";
+import "./assets/scss/responsive.scss";
 
-// Pages
-const Login = Loadable({
-  loader: () => import('./views/Pages/Login/Login'),
-  loading
-});
+//Component Import
+import HomeTwo from "./pages/HomeTwo";
+import ScrollUpBtn from "./components/common/ScrollUpBtn";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import ContactForm from "./pages/ContactForm";
+const App = () => {
 
-const Register = Loadable({
-  loader: () => import('./views/Pages/Register'),
-  loading
-});
+    React.useEffect(() => {
+        window.scrollTo(0,0)
+    });
 
-const Page404 = Loadable({
-  loader: () => import('./views/Pages/Page404'),
-  loading
-});
-
-const Page500 = Loadable({
-  loader: () => import('./views/Pages/Page500'),
-  loading
-});
-
-class App extends Component {
-
-  render() {
     return (
-      <>
-        <BrowserRouter>
-          <Switch>
-            <UnauthenticatedRoute exact path={BASE_ROUTE + "/login"} name="Login Page" component={Login}/>
-            <UnauthenticatedRoute exact path={BASE_ROUTE + "/register"} name="Register Page" component={Register}/>
-            <UnauthenticatedRoute exact path={BASE_ROUTE + "/404"} name="Page 404" component={Page404}/>
-            <UnauthenticatedRoute exact path={BASE_ROUTE + "/500"} name="Page 500" component={Page500}/>
-            <AuthenticatedRoute path={BASE_ROUTE + "/"} name="Home" component={DefaultLayout}/>
-            <Redirect to={BASE_ROUTE + "/"} />
-          </Switch>
-        </BrowserRouter>
-        <ToastContainer/>
-      </>
-    )
-      ;
-  }
+        <div className="App">
+            <div>
+                <Page loader={"bar"} color={"#506CEA"} size={9}>
+                    <Route
+                        render={({ location }) => (
+                            <TransitionGroup className="transition-group">
+                                <CSSTransition
+                                    key={location.key}
+                                    timeout={{ enter: 900, exit: 900 }}
+                                    classNames="fade"
+                                >
+                                    <section className="route-section">
+                                        <Switch location={location}>
+
+                                            <Route
+                                                path="/"
+                                                exact
+                                                component={HomeTwo}
+                                            />
+                                            <Route
+                                                path="/inquire"
+                                                component={ContactForm}
+                                            />
+
+                                        </Switch>
+                                    </section>
+                                </CSSTransition>
+                            </TransitionGroup>
+                        )}
+                    />
+                    <ScrollUpBtn />
+                </Page>
+            </div>
+        </div>
+    );
 }
 
 export default App;
