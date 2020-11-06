@@ -1,0 +1,61 @@
+@import "../../assets/scss/colors";
+.rmp-pad {
+  display: block!important;
+  //width: 100%;
+  position: absolute!important;
+  background: white!important;
+
+  box-shadow: 0 1px 25px rgba(50, 50, 93, 0.1), 0 1px 10px rgba(0, 0, 0, 0.07) !important;
+  border-radius: 10px!important;
+  padding: 0px!important;
+  left: 5px!important;
+  right: 5px!important;
+  bottom: 5px!important;
+
+  ul {
+    list-style-type: none!important;
+    margin: 0!important;
+    padding: 0!important;
+  }
+  .rmp-ul {
+    min-height: 180px!important;
+  }
+  .rmp-btn {
+    width: 33.3333333333%!important;
+    display: block!important;
+    float: left!important;
+    text-align: center!important;
+    line-height: 2.8rem !important;
+    font-size: 17px !important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important;
+    -webkit-text-stroke-width: 0.2px!important;
+    //border-radius: 10px!important;
+    cursor: pointer;
+  }
+  .rmp-action-btn {
+    width: 50%;
+    display: block!important;
+    float: left!important;
+    text-align: center!important;
+    line-height: 2.8rem!important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important;
+    -webkit-text-stroke-width: 0.2px!important;
+    border-radius: 10px!important;
+    box-shadow: 0 1px 25px rgba(50, 50, 93, 0.1), 0 1px 10px rgba(0, 0, 0, 0.07) !important;
+    font-size: 15px!important;
+    cursor: pointer!important;
+  }
+  .rmp-action-wrapper {
+    margin-top: 10px!important;
+  }
+  .rmp-active {
+    background: $teach-black!important;
+    color: $white!important;
+  }
+  .rmp-previous-month {
+    color: gray!important;
+    cursor: not-allowed!important;
+  }
+}

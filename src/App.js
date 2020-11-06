@@ -1,63 +1,55 @@
-import React, {Component} from 'react';
-import {BrowserRouter, Redirect, Switch} from 'react-router-dom';
-// import { renderRoutes } from 'react-router-config';
-import Loadable from 'react-loadable';
-import './App.scss';
-import {ToastContainer} from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-import {BASE_ROUTE} from "./Constants/Constants";
-import UnauthenticatedRoute from "./Components/RouteGuards/UnauthenticatedRoute";
-import AuthenticatedRoute from "./Components/RouteGuards/AuthenticatedRoute";
+/**
+ * Created by WebStorm.
+ * User: athukorala
+ * Date: 7/19/20
+ * Time: 5:16 PM
+ */
+import React from 'react';
+import {Redirect, Route, Switch} from "react-router";
+import * as constants from "./const/constants";
+import {BrowserRouter} from "react-router-dom";
+import * as actionCreator from "./store/domain/classes/action";
+import connect from "react-redux/es/connect/connect";
+import Loader from "./components/Loader/Loader";
+import Login from "./components/Modals/Auth/Login";
+import Register from "./components/Modals/Auth/Register";
+import ForgotPassword from "./components/Modals/Auth/ForgotPassword";
+import Layout from "./containers/Layout/Layout";
 
-const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <BrowserRouter>
+                    <Loader/>
+                    <Switch>
+                        <Route
+                            path={`${constants.BASE_ROUTE}${constants.HOME_ROUTE}`} //byJPk
+                            render={props => <Layout {...props} />}/>
 
-// Containersz
-const DefaultLayout = Loadable({
-  loader: () => import('./containers/DefaultLayout'),
-  loading
-});
+                        <Route
+                            path={`${constants.BASE_ROUTE}${constants.AUTH_LOGIN_ROUTE}`} exact
+                            render={props => <Login {...props} />}/>
+                        <Route
+                            path={`${constants.BASE_ROUTE}${constants.AUTH_REG_ROUTE}`} exact
+                            render={props => <Register {...props} />}/>
+                        <Route
+                            path={`${constants.BASE_ROUTE}${constants.AUTH_FORGOT_ROUTE}`} exact
+                            render={props => <ForgotPassword {...props} />}/>
 
-// Pages
-const Login = Loadable({
-  loader: () => import('./views/Pages/Login/Login'),
-  loading
-});
+                        <Redirect to={`${constants.BASE_ROUTE}${constants.HOME_INSTITUTE_ROUTE}`}/>
+                    </Switch>
 
-const Register = Loadable({
-  loader: () => import('./views/Pages/Register'),
-  loading
-});
+                </BrowserRouter>
 
-const Page404 = Loadable({
-  loader: () => import('./views/Pages/Page404'),
-  loading
-});
-
-const Page500 = Loadable({
-  loader: () => import('./views/Pages/Page500'),
-  loading
-});
-
-class App extends Component {
-
-  render() {
-    return (
-      <>
-        <BrowserRouter>
-          <Switch>
-            <UnauthenticatedRoute exact path={BASE_ROUTE + "/login"} name="Login Page" component={Login}/>
-            <UnauthenticatedRoute exact path={BASE_ROUTE + "/register"} name="Register Page" component={Register}/>
-            <UnauthenticatedRoute exact path={BASE_ROUTE + "/404"} name="Page 404" component={Page404}/>
-            <UnauthenticatedRoute exact path={BASE_ROUTE + "/500"} name="Page 500" component={Page500}/>
-            <AuthenticatedRoute path={BASE_ROUTE + "/"} name="Home" component={DefaultLayout}/>
-            <Redirect to={BASE_ROUTE + "/"} />
-          </Switch>
-        </BrowserRouter>
-        <ToastContainer/>
-      </>
-    )
-      ;
-  }
+            </div>
+        )
+    }
 }
 
-export default App;
+
+const mapDispatchToProps = (dispatch) => ({
+    selectClassHandler: data => dispatch(actionCreator.selectClass(data))
+});
+
+export default connect(null, mapDispatchToProps)(App);

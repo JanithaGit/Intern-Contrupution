@@ -1,0 +1,83 @@
+@import "../../../assets/scss/colors";
+
+
+.main {
+  .lecture-intro {
+    background: $teach-black;
+
+    .container {
+      padding-top: 10vh;
+      padding-bottom: 50px;
+      padding-left: 10vw !important;
+      padding-right: 10vw !important;
+    }
+    .class-slide{
+      padding-top: 0px !important;
+    }
+    .round-img {
+      border-radius: 50%;
+      box-shadow:   3px 1px 10px 2px #707070 !important;
+      width: 226px;
+      height: 226px;
+      object-fit: cover;
+      border: 5px solid white;
+    }
+
+    .first-col {
+      height: 10%;
+      right: 10vw;
+      top: 100px;
+      z-index: 10;
+      align-items: left !important;
+      padding-bottom: 10px;
+    }
+    .second-col {
+      align-items: left !important;
+      height: 10%;
+      right: 5vw;
+      top: 5vh ;
+      //z-index: 130;
+    }
+    .sp-number {
+      font-size: 20px ;
+      //margin-right: 10px !important;
+     // margin-left: 10px !important;
+      //line-height: rem !important;
+    }
+
+    .name-row1 {
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+//line-height: 1px !important;
+    }
+    .row-2 {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      color: white;
+      font-size: 38px;
+      line-height: 1rem !important;
+
+
+    }
+    .name-row2 {
+      color: white;
+      font-size: 18px;
+
+    }
+   }
+.class-topic{
+  //text-decoration: underline;
+  font-weight: bold !important;
+  color: #000000;
+}
+  .class-section {
+    padding-bottom: 1.2rem !important;
+  }
+.about-para{
+  color: #737373;
+  font-size: 18px;
+  font-family: Aller;
+}
+
+}

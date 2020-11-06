@@ -1,0 +1,35 @@
+@import "../../../assets/scss/colors";
+.profile {
+  padding-top: 10vh ;
+  .profile-main {
+    margin-top: 4vh!important;
+  }
+  .btn-neutral {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .profile-grid {
+    padding: 10px!important;
+    text-align: center;
+    background: #eeeeee;
+    cursor: pointer;
+    max-width: 300px;
+  }
+  .grid-active {
+    background: $teach-black!important;
+    color: $white!important;
+  }
+  .prof-col {border-radius: 2px 0px 0px 2px}
+  .secu-col {border-radius: 0px 2px 2px 0px}
+  input[type=text]:focus {
+    outline: none!important;
+  }
+  input[type=text] {
+    transition: none!important;
+  }
+  .profile-middle {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 3vh;
+  }
+}

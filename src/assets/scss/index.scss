@@ -1,0 +1,161 @@
+@import "colors";
+
+body, html {
+  overflow: inherit !important;
+  min-width: 100% !important;
+}
+#root {
+  main {
+    min-height: 92vh!important;
+  }
+}
+::-moz-selection { /* Code for Firefox */
+  color: white !important;
+  background: black !important;
+}
+
+::selection {
+  color: white !important;
+  background: black !important;
+}
+
+/*scrollabar*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c4c4c4 !important;
+  cursor: pointer!important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $teach-black !important;
+}
+
+#zmmtg-root {
+  display: none;
+}
+
+.teach-black-text {
+  color: $teach-black;
+}
+
+.footer-text {
+  color: grey !important;
+
+}
+
+.n-m {
+  margin: 0px !important;
+}
+
+.n-p {
+  padding: 0px !important;
+}
+
+.lecture-intro {
+  background: $teach-black;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.cursor {
+  cursor: pointer !important;
+}
+.success-modal-text {
+  padding: 10px;
+  background: #cbffd0;
+  border: 1px solid #99e880;
+  color: #03a604;
+  margin-bottom: 15px!important;
+  font-size: 14px;
+}
+.default-modal-text {
+  padding: 15px;
+  background: #cbf7ff;
+  border: 1px solid #80d9e8;
+  color: #038ca6;
+  margin-bottom: 15px !important;
+  font-size: 14px;
+}
+.footer.has-cards {
+  margin-top: auto !important;
+  //background: #eeeeee;
+  background: $white;
+  //height: auto !important;
+  padding: 5px !important;
+  pointer-events: auto !important;
+  border-radius: 30px 30px 0px 0px;
+  height: 8vh!important;
+
+  img {
+    width: 250px;
+  }
+  .row {
+    width: 100%;
+  }
+}
+
+main {
+  padding-bottom: 25px !important;
+}
+
+.normal-txt {
+  text-transform: none !important;
+}
+
+.section-1 {
+  height: 105px;
+  background: $teach-black;
+}
+
+@media (max-width: 480px) {
+  .slick-prev, .slick-next {
+    display: none !important;
+  }
+
+  .footer.has-cards {
+    text-align: center;
+    img {
+      width: 200px;
+    }
+    .row {
+      //width: auto!important;
+      margin: 0px !important;
+    }
+    .justify-content-end {
+      justify-content: center !important;
+    }
+  }
+  .blur-img {
+    //display: none;
+    height: 250px !important;
+  }
+  .ori-img {
+    width: 100% !important;
+    height: 250px !important;
+    //height: auto!important;
+  }
+}
+
+@media (max-width: 769px) {
+  #root {
+    main {
+      min-height: 88vh!important;
+    }
+  }
+  .footer.has-cards {
+    height: 12vh !important;
+  }
+}

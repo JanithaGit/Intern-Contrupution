@@ -1,0 +1,37 @@
+@import "../../assets/scss/override";
+
+.custom-paginate {
+  width: 100% !important;
+  overflow: scroll !important;
+  justify-content: center !important;
+  li, a {
+    cursor: pointer !important;
+    outline: none !important;
+  }
+
+  li > a, li > span {
+    padding: 10px 14px !important;
+    color: $teach-black !important;
+  }
+  .active > a {
+    background: $teach-black !important;
+    color: $white !important;
+    border-radius: 5px;
+    border-color: $teach-black !important;
+  }
+  .disabled, .disabled > a {
+    background: #FFFFFF;
+    border-radius: 5%;
+    padding: 0 10px 0 10px;
+    cursor: not-allowed !important;
+  }
+  @media(max-width: 769px) {
+    justify-content: end !important;
+
+  }
+}
+
+.paginaton-section {
+  padding-top: 1.2rem !important;
+  padding-bottom: 1.2rem !important;
+}

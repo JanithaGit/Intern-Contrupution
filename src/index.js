@@ -1,26 +1,33 @@
-import 'react-app-polyfill/ie9'; // For IE 9-11 support
-import 'react-app-polyfill/ie11'; // For IE 11 support
-import './polyfill'
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './assets/fonts/red-hat.css';
-import './assets/scss/override.scss';
-import './assets/scss/new-stylling.scss';
+import React, {Suspense,lazy} from "react";
+import ReactDOM from "react-dom";
+import {Provider} from "react-redux"
+// import 'semantic-ui-css/semantic.min.css'
+import './assets/css/semantic.css';
+import './assets/scss/zoom-mtg/bootstrap.scss';
+import './assets/scss/zoom-mtg/react-select.scss';
+import 'flatpickr/dist/themes/airbnb.css';
 
-//import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import $ from 'jquery';
-window.jQuery = $;
-window.$ = $;
-global.jQuery = $;
+import "assets/vendor/nucleo/css/nucleo.css";
+import "assets/vendor/font-awesome/css/font-awesome.min.css";
+import "assets/scss/argon-design-system-react.scss?v1.1.0";
+import "toastr/build/toastr.min.css"
+
+import {store} from "./store/storeConfig/store"
+import './assets/fonts/opens-sans.css';
+import './assets/fonts/red-hat.css';
+import './assets/fonts/fira-sans.css';
+import "./assets/scss/index.scss";
+import "./assets/scss/override.scss";
+import "./assets/scss/home-reponsive.scss";
+import SiteLoader from "./components/Loader/SiteLoader";
+
+const LazyApp = lazy(() => import("./App"));
 
 ReactDOM.render(
-  <App/>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <Suspense fallback={<SiteLoader />}>
+        <LazyApp />
+        </Suspense>
+    </Provider>,
+    document.getElementById("root")
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();

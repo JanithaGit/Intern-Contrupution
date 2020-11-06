@@ -1,0 +1,163 @@
+@import "../../assets/scss/colors";
+
+.view-class {
+
+  min-height: 150px;
+  border-radius: 10px;
+
+  width: 100%;
+  margin: 15px auto 25px auto;
+  position: relative;
+  //.head-teacher {
+  //  font-size: 17px;
+  //  line-height: 10px;
+  //  padding-bottom: 10px !important;
+  //  color: $orange !important;
+  //}
+  p {
+    line-height: 1.1;
+  }
+  .btn:not(:last-child) {
+    margin-right: 0px;
+  }
+  .btn-neutral {
+    margin-top: 5px;
+  }
+
+  .vc-image-wrapper {
+    width: 180px;
+    //height: 150px;
+    background: white;
+    position: relative;
+  }
+  .vc-image {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    object-fit: contain;
+    border-radius: 10px 0px 0px 10px;
+    z-index: 10;
+    position: absolute;
+    cursor: pointer;
+  }
+  .vc-blur-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    object-fit: cover;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    opacity: 0.3;
+  }
+  .vc-topic {
+    margin-top: 1rem !important;
+    margin-bottom: 5px !important;
+  }
+  .vc-day {
+    font-size: 15px !important;
+    margin-bottom: 5px !important;
+  }
+ 
+  .vc-mb-1 {
+    margin-bottom: 1rem !important;
+  }
+  .vc-right {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  .vc-action {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    padding-bottom: 5px !important;
+  }
+  .vc-action {
+    height: 100%;
+    margin-left: 30px;
+    position: absolute;
+    right: 10px;
+    padding-bottom: 5px !important;
+  }
+  
+  .enrolled-months {
+    background: #ffffff;
+    padding: 8px;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+
+    .title {
+      font-size: 14px !important;
+    }
+    .text {
+      font-size: 13px !important;
+      //margin-bottom: 3px!important;
+    }
+  }
+  @media (max-width: 800px) {
+    .vc-action {
+      position: relative;
+      margin-bottom: 30px;
+      height: auto;
+      display: block;
+    }
+    .vc-image-wrapper {
+      height: 150px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .btn-neutral {
+      margin-top: 5px;
+      margin-right: 5px !important;
+    }
+    .btn:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  @media (min-width: 1300px) {
+    width: 65vw;
+  }
+  @media (min-width: 1600px) {
+    width: 65vw;
+  }
+  @media (min-width: 1800px) {
+    width: 55vw;
+  }
+
+}
+
+.view-class.expire-card {
+  background: #f9efef;
+}
+
+.view-class.un-expire-card {
+  background: $classCard-bg;
+}
+
+.un-expire-card .vc-note {
+  background: $amount-bg;
+  text-align: center;
+  color: #B77B6C;
+}
+
+.expire-card .vc-note {
+  background: #ffcccc;
+  text-align: center;
+  color: #a70505;
+}
+
+.un-expire-card .vc-note, .expire-card .vc-note {
+  position: absolute;
+  top: -12px;
+  font-size: 13px;
+  //padding: 5px;
+  right: 10px;
+  border-radius: 30px;
+  padding: 5px 10px;
+}

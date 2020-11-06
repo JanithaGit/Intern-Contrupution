@@ -1,0 +1,110 @@
+@import "../../assets/scss/colors";
+
+.header-global {
+  .main-txt {
+    font-family: Lato, Helvetica Neue, Arial, Helvetica, sans-serif;
+    text-transform: none !important;
+    font-weight: 600;
+    font-size: 24px;
+
+    color: $white;
+
+  }
+  .reg-text {
+    margin-right: 10px !important;
+    margin-left: 0px !important;
+  }
+  .nav-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: $teach-black !important;
+    &:hover {
+
+        background: $teach-black !important;
+       color: white !important;
+
+    }
+  }
+
+
+  .toggle-ctrl{
+    color: $teach-black;
+    font-size: 30px !important;
+    z-index: 1 !important;
+  }
+  .toggle-ctrl2{
+    color: white !important;
+  }
+  .navbar-brand {
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    //flex-direction: column;
+    font-weight: 600;
+    flex-direction: inherit;
+    img {
+      height: 35px;
+    }
+  }
+
+
+
+  .reg-text:after {
+    content: '';
+    display: block;
+    //border-radius: 50%;
+    background-color: $orange;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    right: 10px;
+    bottom: 19px;
+    animation: live 1s infinite linear;
+  }
+
+  .mobile {
+    .main-txt {
+      color: $teach-black !important;
+      font-size: 20px !important;
+    }
+  }
+
+  .nav-link-active {
+    background: $teach-black;
+    color: white !important;
+    opacity: 1;
+  }
+
+@keyframes live {
+  from {
+    box-shadow: 0px 0px 0px 0px $orange;
+  }
+  to {
+    box-shadow: 0px 0px 0px 10px rgba(232, 53, 78, 0.01);
+  }
+}
+
+.btn-neutral {
+  text-transform: none !important;
+}
+ .mobile-nav{
+   padding-bottom: 5px !important;
+   align-items: center;
+
+ }
+
+}.reg-btn{
+  background-color: $orange !important;
+  color: white !important;
+   padding-bottom: 5px !important;
+   padding-top: 5px !important;
+}
+
+.log-btn{
+  background-color: $teach-black !important;
+  color: white !important;
+  padding-bottom: 5px !important;
+  padding-top: 5px !important;
+
+}

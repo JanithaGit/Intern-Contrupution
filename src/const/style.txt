@@ -1,0 +1,25 @@
+.component-main {
+    padding-top: 87px;
+}
+.cmpnt-main {
+    padding: 3vw 0px;
+}
+ .padding-updownwithout-cmpnt-main {
+     padding: 0px 12%;
+ }
+ .padding-cmpnt-main {
+     padding: 3vw 12%;
+ }
+ .align-center {
+     text-align: center !important;
+ }
+ .none-padding{
+
+ }
+ .display-inline  {
+
+ }
+ .position-relative {
+
+ }
+ minus-margin {-15}

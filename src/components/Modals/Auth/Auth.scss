@@ -1,0 +1,98 @@
+@import "../../../assets/scss/colors";
+.auth-modal {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)!important;
+  background: $teach-black!important;
+  border-radius: 5px!important;
+
+  .btn-neutral {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .logo-wrapper {
+    text-align: center;
+    margin-top: 12px;
+  }
+  .logo-img {
+    height: 35px;
+  }
+
+  .login-title {
+    margin: 0px;
+    text-align: center;
+    padding: 15px 5px 38px 5px !important;
+    font-size: 23px;
+    color: white;
+  }
+  .header {
+    padding: 0px!important;
+    background: $teach-black!important;
+    border-bottom: none!important;
+  }
+  .actions {
+    //padding: 0px!important;
+    //background: $teach-black!important;
+    //border-top: none!important;
+    text-align: center!important;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    &:hover {
+      background: #dedede!important;
+      //color: $white!important;
+    }
+  }
+  .fa-home,.fa-chevron-left {
+    margin-right: 7px;
+  }
+  .login-btn-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .middle-wrapper {
+      text-align: right;
+  }
+  .small-text {
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 5px!important;
+    border-bottom: 1px solid !important;
+    color: gray;
+    &:hover {
+      color: $black;
+    }
+  }
+  .expire-text {
+    margin-top: 12px!important;
+    label {
+      width: 25px;
+      margin: 0px;
+      font-size: 15px;
+      text-align: left;
+      margin-left: 3px;
+    }
+    .resend-text {
+      color: gray;
+      cursor: pointer;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+  input[type=text]:focus {
+    outline: none!important;
+  }
+  input[type=text] {
+    transition: none!important;
+  }
+
+  @media only screen and (max-width: 767px){
+    .actions {
+      padding: 1rem 1rem!important;
+    }
+    .header {
+      padding: 0px!important;
+    }
+
+  }
+
+}

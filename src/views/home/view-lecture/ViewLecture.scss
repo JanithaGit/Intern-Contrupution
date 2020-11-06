@@ -1,0 +1,682 @@
+@import "../../../assets/scss/colors";
+
+.col-poly {
+  padding-left: 0vw !important;
+  padding-right: 0vw !important;
+  left: 0vw !important;
+  margin: 0px !important;
+  z-index: 10;
+  position: absolute;
+  padding-top: 50vh;
+  background-color: $teach-black !important;
+
+}
+
+.home-btn {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.lec-view-class {
+  .section-top {
+    z-index: 999 !important;
+  }
+  p {
+    line-height: 1.5;
+    margin: 0px !important;
+  }
+  .head-topic {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+  }
+  .head-teacher {
+    font-size: 20px;
+    line-height: 10px;
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
+    color: #949494 !important;
+  }
+  .card-img {
+
+    //border: none !important;
+    border: 5px solid white !important;
+    box-shadow: 3px 1px 10px 2px #707070 !important;
+    border-radius: 1rem !important;
+  }
+  .main-img {
+    //position: absolute;
+    z-index: 999 !important;
+    filter: blur(0px) brightness(70%);
+    padding-top: 0vh !important;
+    background-color: white;
+    border-radius: 1rem !important;
+    border: none !important;
+    box-shadow: none !important;
+    object-fit: cover;
+  }
+  .prop-card {
+    border: none !important;
+  }
+  .col-img {
+
+    top: 10vh !important;
+    z-index: 10;
+    padding-bottom: 10vh !important;
+  }
+  .prop-img {
+    border-radius: 50%;
+    width: 250px !important;
+    height: 250px !important;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 3px 1px 10px 2px #707070 !important;
+
+  }
+
+  .row-midle {
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+  }
+  .col-one {
+    padding-top: 5vh !important;
+    height: 10%;
+    right: 0vw !important;
+    top: 0px !important;
+    z-index: 10;
+    align-items: center !important;
+  }
+
+  .col-two {
+    padding-top: 5vh !important;
+    align-items: left !important;
+    height: 10%;
+    right: 0vw;
+    padding-left: 5vh;
+    top: 0vh !important;
+    z-index: 1;
+
+  }
+  .name-row1 {
+    text-align: center !important;
+    color: black;
+    font-size: 22px !important;
+    font-weight: bold;
+    padding-top: 5vh !important;
+  }
+  .name-row2 {
+    color: #929292 !important;
+    text-align: center !important;
+    font-size: 12px;
+    font-style: italic;
+    padding-bottom: 5vh !important;
+  }
+  .btn-prop {
+    text-align: center !important;
+  }
+  .lec-desc {
+    font-size: 18px;
+    color: #737373;
+    padding-left: 0vw !important;
+  }
+  .card-shedule {
+    border-radius: 10px;
+    width: 100%;
+    min-height: 300px;
+    background-color: $classCard-bg;
+  }
+
+  .col-syllebus {
+    padding-top: 5vh;
+    padding-left: 5vh;
+    padding-bottom: 0px!important;
+  }
+  .col-shedule {
+    padding-top: 5vh;
+    //margin-top: 15px;
+  }
+
+  .card-syllebus {
+    width: 100%;
+    border-radius: 10px;
+    min-height: 100%;
+    background-color: $classCard-bg;
+    font-weight: bold;
+    padding-bottom: 5vh !important;
+
+  }
+
+  .card-topic {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    font-size: 22px;
+    color: #2C4775;
+    font-weight: bold !important;
+
+  }
+  .next-list {
+    padding-top: 20px !important;
+  }
+  .next-day {
+    font-weight: bold !important;
+  }
+  .day-list {
+    //line-height: rem !important;
+    margin-bottom: 5px !important;
+  }
+  .card-cont {
+    padding-left: 40px !important;
+    margin-left: 16px !important;
+    color: #2C4775;
+  }
+  .card-pur-months {
+    background-color: $classCard-bg;
+    //height: fit-content;
+    //bottom: 5vh;
+  }
+  .pur-col {
+    align-items: center !important;
+  }
+  .month-card {
+    background-color: $classCard-bg;
+    width: fit-content;
+
+  }
+  .button-ctrl {
+    padding-top: 5vh;
+    padding-left: 5vh;
+    margin: 0px !important;
+    //margin-top: 15px !important;
+  }
+
+  .intro {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .last-meeting {
+    font-size: 18px;
+    padding-top: 5px !important;
+    padding-bottom: 0px !important;
+  }
+  .lec-time {
+    font-size: 17px;
+    line-height: 1.5;
+    padding-bottom: 10px !important;
+  }
+  .lec-purchase {
+    padding: 12px;
+    margin-bottom: 15px !important;
+    .lec-desc {
+
+      padding-top: 0px !important;
+    }
+  }
+  .lec-syllabus {
+    padding: 12px;
+    background: #f6f6f6;
+    border: 1px solid #eaeaea;
+  }
+  .lec-syllabus_ {
+    margin-bottom: 15px;
+  }
+  .syllabus {
+    font-size: 15px !important;
+    line-height: 1.5;
+  }
+  .btn-neutral {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .classes-topic {
+    font-size: 30px !important;
+  }
+  .join-btn {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .lec-valid-wrapper {
+    margin-bottom: 15px !important;
+  }
+  .lec-valid {
+    font-size: 13px;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin-bottom: 15px !important;
+  }
+
+  .expire-layout {
+    .lec-valid {
+      background: #ffcccc;
+      text-align: center;
+      color: #a70505;
+    }
+  }
+  .un-expire-layout {
+    .lec-valid {
+      background: #d1ffcc;
+      text-align: center;
+      color: green;
+    }
+  }
+}
+
+.classes-topic {
+  font-size: 30px;
+  color: black;
+  text-decoration: underline;
+
+}
+
+@media (max-width: 1024px) {
+
+  .col-poly {
+    padding-left: 0vw !important;
+    padding-right: 0vw !important;
+  }
+  .main-img {
+    padding-left: 0px !important;
+  }
+  .col-one {
+
+    min-width: 100% !important;
+
+  }
+
+  .prop-card {
+    padding-left: 35vw !important;
+  }
+  .col-two {
+    min-width: 100% !important;
+    padding-left: 5vw !important;
+
+  }
+  .lec-desc {
+    padding-right: 5vw !important;
+    padding-left: 5vw !important;
+  }
+  .col-shedule {
+    padding-right: 5vw !important;
+    padding-left: 5vw !important;
+
+    min-width: 100% !important;
+  }
+  .col-syllebus {
+    padding-right: 5vw !important;
+    padding-left: 5vw !important;
+    //padding-bottom: 10vw !important;
+    min-width: 100% !important;
+  }
+  .pur-col {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+    min-width: 100% !important;
+    padding-top: 5px !important;
+
+  }
+  .head-topic {
+
+    padding-top: 10px !important;
+    font-size: 30px !important;
+  }
+  .card-pur-months {
+    bottom: 0vh !important;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .col-poly {
+    padding-left: 0vw !important;
+    padding-right: 0vw !important;
+  }
+  .main-img {
+    padding-left: 0px !important;
+  }
+  .col-one {
+
+    min-width: 100% !important;
+
+  }
+  .card-pur-months {
+    background-color: $classCard-bg;
+    height: fit-content;
+    bottom: 0vh !important;
+  }
+  .prop-card {
+    padding-left: 35vw !important;
+  }
+  .col-two {
+    min-width: 100% !important;
+    padding-left: 5vw !important;
+
+  }
+  .col-shedule {
+    min-width: 100% !important;
+  }
+  .col-syllebus {
+    min-width: 100% !important;
+  }
+  .pur-col {
+
+    min-width: 100% !important;
+    padding-top: 5vh !important;
+
+  }
+  .head-topic {
+    padding-top: 10px !important;
+    font-size: 30px !important;
+  }
+
+}
+
+@media (max-width: 850px) {
+  .col-poly {
+    padding-left: 0vw !important;
+    padding-right: 0vw !important;
+  }
+  .main-img {
+    padding-left: 0px !important;
+  }
+  .col-one {
+
+    min-width: 100% !important;
+
+  }
+  .prop-card {
+    padding-left: 25vw !important;
+  }
+  .col-two {
+    min-width: 100% !important;
+    padding-left: 5vw !important;
+
+  }
+  .col-shedule {
+    min-width: 100% !important;
+  }
+  .col-syllebus {
+    min-width: 100% !important;
+  }
+  .pur-col {
+    min-width: 100% !important;
+    padding-top: 5px !important;
+  }
+  .head-topic {
+    padding-top: 10px !important;
+    font-size: 30px !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .main-img {
+    padding-left: 0px !important;
+  }
+  .col-one {
+
+    min-width: 100% !important;
+
+  }
+  .prop-card {
+    padding-left: 30vw !important;
+  }
+  .col-two {
+    min-width: 100% !important;
+    padding-left: 5vw !important;
+
+  }
+  .col-shedule {
+    min-width: 100% !important;
+
+  }
+  .col-syllebus {
+    min-width: 100% !important;
+    padding-bottom: 5vh !important;
+  }
+  .pur-col {
+    min-width: 100% !important;
+
+  }
+  .head-topic {
+    padding-top: 10px !important;
+    font-size: 30px !important;
+  }
+  .col-poly {
+
+    height: 50vh !important;
+    padding-top: 50vh !important;
+    padding-left: 0vw !important;
+    padding-right: 0vw !important;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .main-img {
+    padding-left: 0px !important;
+  }
+  .col-one {
+
+    min-width: 100% !important;
+
+  }
+  .prop-card {
+    padding-left: 20vw !important;
+  }
+  .col-two {
+    min-width: 100% !important;
+    padding-left: 5vw !important;
+
+  }
+  .col-shedule {
+    min-width: 100% !important;
+  }
+  .col-syllebus {
+    min-width: 100% !important;
+  }
+  .pur-col {
+    min-width: 100% !important;
+    padding-top: 5px !important;
+  }
+  .head-topic {
+    padding-top: 10px !important;
+    font-size: 30px !important;
+  }
+  .col-poly {
+
+    height: 50vh !important;
+    padding-top: 50vh !important;
+    padding-left: 0vw !important;
+    padding-right: 0vw !important;
+  }
+
+}
+
+@media (max-width: 574px) {
+  .col-poly {
+    height: 40vh !important;
+    padding-top: 0vh !important;
+    padding-left: 0vw !important;
+    padding-right: 0vw !important;
+  }
+  .main-img {
+    padding-left: 0px !important;
+  }
+  .col-one {
+
+    min-width: 100% !important;
+
+  }
+  .prop-card {
+    padding-left: 15vw !important;
+  }
+  .col-two {
+    min-width: 100% !important;
+    padding-left: 5vw !important;
+
+  }
+  .lec-desc {
+    padding-left: 5vw !important;
+  }
+  .col-shedule {
+    min-width: 100% !important;
+  }
+  .col-syllebus {
+    min-width: 100% !important;
+    padding-bottom: 5vh !important;
+  }
+
+  .pur-col {
+    min-width: 100% !important;
+    padding-top: 5px !important;
+  }
+  .head-topic {
+    padding-top: 10px !important;
+    font-size: 30px !important;
+  }
+
+}
+
+@media (max-width: 411px) {
+  .col-poly {
+    height: 30vh !important;
+    padding-top: 30vh !important;
+    padding-left: 0vw !important;
+    padding-right: 0vw !important;
+  }
+
+  .main-img {
+    top: 10vh !important;
+    padding-left: 0px !important;
+  }
+  .col-one {
+
+    min-width: 100% !important;
+
+  }
+  .prop-card {
+    padding-left: 15vw !important;
+  }
+  .col-two {
+    min-width: 100% !important;
+    padding-left: 5vw !important;
+
+  }
+  .lec-desc {
+    padding-left: 5vw !important;
+  }
+  .col-shedule {
+    min-width: 100% !important;
+  }
+  .col-syllebus {
+    min-width: 100% !important;
+  }
+  .pur-col {
+    min-width: 100% !important;
+    padding-top: 5px !important;
+  }
+  .head-topic {
+    padding-top: 10px !important;
+    font-size: 20px !important;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .col-poly {
+    padding-left: 0vw !important;
+    padding-right: 0vw !important;
+    height: 30vh !important;
+    padding-top: 30vh !important;
+  }
+  .main-img {
+    padding-left: 0px !important;
+  }
+
+  .col-one {
+
+    min-width: 100% !important;
+
+  }
+  .prop-card {
+    padding-left: 8vw !important;
+  }
+  .col-two {
+    min-width: 100% !important;
+    padding-left: 5vw !important;
+
+  }
+  .lec-desc {
+    padding-left: 5vw !important;
+  }
+  .col-shedule {
+    min-width: 100% !important;
+  }
+  .col-syllebus {
+    min-width: 100% !important;
+  }
+  .pur-col {
+    min-width: 100% !important;
+    padding-top: 5px !important;
+  }
+  .head-topic {
+    padding-top: 10px !important;
+    font-size: 20px !important;
+  }
+  .head-teacher {
+    font-size: 16px !important;
+  }
+
+}
+
+@media (max-width: 300px) {
+  .col-poly {
+    padding-left: 0vw !important;
+    padding-right: 0vw !important;
+    height: 30vh !important;
+    padding-top: 30vh !important;
+  }
+  .main-img {
+    padding-left: 0px !important;
+  }
+
+  .col-one {
+
+    min-width: 100% !important;
+
+  }
+  .prop-card {
+    padding-left: 0vw !important;
+  }
+  .col-two {
+    min-width: 100% !important;
+    padding-left: 5vw !important;
+
+  }
+  .lec-desc {
+    padding-left: 5vw !important;
+  }
+  .col-shedule {
+    min-width: 100% !important;
+  }
+  .col-syllebus {
+    min-width: 100% !important;
+  }
+  .pur-col {
+    min-width: 100% !important;
+    padding-top: 5px !important;
+  }
+  .head-topic {
+    padding-top: 10px !important;
+    font-size: 20px !important;
+  }
+  .head-teacher {
+    font-size: 16px !important;
+  }
+
+}
+
+
+

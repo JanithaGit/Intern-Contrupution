@@ -1,0 +1,69 @@
+@import "../../../assets/scss/colors";
+.main {
+  .lecture-intro {
+    background: $teach-black;
+    .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .text-warning {
+      text-align: center;
+    }
+    .lead-head {
+      color: $white;
+      
+    }
+    .lead-text {
+      color: $white;
+      text-align: justify; //
+
+      text-align: justify!important;
+    }
+    .card {
+      border: 2px solid transparent!important;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      cursor: pointer;
+      background: transparent;
+  }
+    .ori-img {
+
+      max-width: 95%;
+
+      //max-width: 400px;
+      width: 85%;
+      height: 400px;
+      object-fit: contain;
+      z-index: 10;
+    }
+
+    .blur-img {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      -webkit-filter: blur(5px);
+      filter: brightness(50%) blur(5px);
+      -webkit-filter: blur(5px) brightness(68%);
+      filter: blur(5px) brightness(68%);
+      height: 400px;
+    }
+    .blur-img-2 {
+      object-fit: contain;
+      width: 100%;
+      height: 470px;
+    }
+  }
+  .head-topic {
+    padding-bottom: 25px;
+    text-align: center;
+  }
+  .class-section {
+    padding-bottom: 1.2rem!important;
+  }
+  .m-15-paginate {
+    margin-left: 15px!important;
+    margin-right: 15px!important;
+  }
+}
