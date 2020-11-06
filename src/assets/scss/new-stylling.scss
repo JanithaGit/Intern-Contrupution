@@ -1,0 +1,137 @@
+@import "colors";
+@import "font";
+//common code start........
+p,h1,h2,h3,h4,h5,h6,ul,li,a,span,button,div,form,input,label{
+  font-family: $common-fonts;
+}
+.com-bg{
+  background-color: $teach-black !important;
+}
+.btn-orange{
+  background-color: $btn-orange !important;
+}
+.btn-primary{
+  background-color: $teach-black !important;
+}
+.com-btn {
+  padding-bottom: 10px !important;
+  font-size: 18px !important;
+  //min-width: 100% !important;
+  border-radius: 5px;
+  //padding: 10px 27px;
+  position: relative;
+  overflow: hidden;
+  background-color: #293d60;
+  color: white !important;
+  text-transform: none !important;
+  height: 40px;
+  font-weight: normal !important;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 100px;
+    -webkit-transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+    -ms-transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+    transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+    transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+    background: rgba(255, 255, 255, 0.5);
+    left: 0;
+    top: 0;
+  }
+  &:hover {
+    opacity: 1.0 !important;
+  //  &::before {
+  //    background: white;
+  //    -webkit-transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+  //    -ms-transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+  //    transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 80deg);
+  //  }
+  }
+}
+
+//common code end....
+
+//AppClassTitle Start.......
+.card-dis{
+  font-size: 16px !important;
+  color: #2C4775;
+}
+.card-wrap{
+  padding-bottom: 50px !important;
+}
+.card-ctrl{
+  border: none !important;
+  background: white;
+  //box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07)!important;
+  box-shadow: 0 1px 25px rgba(50, 50, 93, 0.1), 0 1px 10px rgba(0, 0, 0, 0.07) !important;
+  margin: 10px;
+  //margin: 10px 10px 10px 0;
+  border-radius: 10px;
+
+}
+.class-img{
+  border: 1px solid white !important;
+  box-shadow: 0 1px 25px rgba(50, 50, 93, 0.1), 0 1px 10px rgba(0, 0, 0, 0.07) !important;
+  border-radius: 1rem !important;
+}
+.card-topic{
+  color: #2C4775;
+  font-weight: bold !important;
+  font-size: 20px;
+}
+.sub-title{
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
+.sub-name{
+  font-size: 18px;
+  color: black;
+}
+.amount{
+  color: #B77B6C;
+  background-color: #fff3f0;;
+}
+//AppClassTitle End.......
+
+//AppTeachersTitle Start.....
+.tea-name{
+  font-size: 28px;
+  color: black;
+  font-weight: bold;
+
+}
+.tea-qf{
+  color: black;
+  font-style: italic;
+  font-style: 16px;
+}
+.link-style{
+  width: 100% !important;
+
+}
+
+.dzu-dropzone{
+  overflow: hidden !important;
+}
+
+//AppTeachersTitle end.....
+
+//responsive code start.....
+@media (max-width: 600px) {
+.link-respo{
+  min-width: 100% !important;
+
+
+}
+  .link-title{
+    margin-left: 10px !important;
+    padding-left: 2px !important;
+
+  }
+}
+//responsive code end......
+

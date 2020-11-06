@@ -1,28 +1,22 @@
+import 'react-app-polyfill/ie9'; // For IE 9-11 support
 import 'react-app-polyfill/ie11'; // For IE 11 support
-import 'react-app-polyfill/stable';
 import './polyfill'
-import {Provider} from 'react-redux';
-import React, {lazy, Suspense} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import './assets/fonts/red-hat.css';
+import './assets/scss/override.scss';
+import './assets/scss/new-stylling.scss';
+
+//import './index.css';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {icons} from './assets/icons'
-import './assets/scss/colors.scss';
-import './assets/scss/fonts.scss';
-import "react-image-gallery/styles/scss/image-gallery.scss";
-import "toastr/build/toastr.min.css";
-import 'semantic-ui-css/semantic.min.css';
- import Loader from './components/Loader/Loader';
-import {store} from "./store/storeConfig/store";
+import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
+global.jQuery = $;
 
-React.icons = icons;
-
-const App = lazy(() => import("./App"));
 ReactDOM.render(
-  <Provider store={store}>
-    <Suspense fallback={<Loader/>}>
-      <App/>
-    </Suspense>
-  </Provider>,
+  <App/>,
   document.getElementById('root')
 );
 

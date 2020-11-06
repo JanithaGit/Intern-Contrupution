@@ -1,0 +1,15 @@
+//zoom layout
+#zmmtg-root {
+  .open.btn-group {
+    //.popmenu, .more-button__pop-menu, .dropdown-menu {
+    //  display: block;
+    //}
+    ul[role=menu] {
+      display: block;
+    }
+  }
+  li[role=heading] {
+    background-color: black;
+  }
+
+}
