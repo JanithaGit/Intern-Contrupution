@@ -1,0 +1,92 @@
+@import "../../../../assets//scss//colors.scss";
+.views-main{
+    background: white;
+
+    .views-row-one{
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    .image-wrapper{
+        text-align: center;
+        
+    }
+    .views-image{
+        text-align: center;
+        object-fit: cover;
+       
+       
+        
+    }
+    .hr-line-one{
+        border: 1px solid black;
+    }
+    .views-col-topic-one{
+        text-align: left;
+        padding-left: 20px;
+           font-size: 40px;
+    }
+    .midle-col{
+        
+        border-left: 1px solid rgb(223, 216, 216);
+        border-right: 1px solid rgb(223, 216, 216);
+    }
+    .app-img{
+       object-fit: cover;
+        height: 150px;
+        width: 200x;
+    }
+   
+    
+    .views-col-topic-two{
+        text-align: left;
+        padding-top: none !important;
+        font-style: italic;
+        padding-left: 20px;
+           font-size: 20px;
+    }
+    .views-col-topic{
+     text-align: left;
+     padding-left: 40px;
+        font-size: 24px;
+    }
+    .views-stat-row{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .views-stats{
+        text-align: center;
+        
+    }
+    .views-stats-topic{
+        font-size: 20px;
+    }
+    .views-col-number{
+        font-size: 30px;
+        color: $submit-color;
+    }
+    .views-col-topic-spe{
+        color: #d63d41;
+    }
+    .views-col-data{
+        padding-left: 20px;
+        
+    }
+    .col-table{
+        text-align: center;
+    }
+    .table-data{
+        padding-left: 50px;
+    }
+    .password-change{
+        color: $close-color;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .select-item{
+margin-bottom: 20px;
+    }
+}
+/* Created By Janitha Prashad Katukenda
+ jpk Created on Fri Nov 06 2020
+Copyright (c) 2020 Ceyentra TechNologies
+APPLAB */

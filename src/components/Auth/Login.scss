@@ -1,0 +1,54 @@
+/* Created By Janitha Prashad Katukenda
+ jpk Created on Thu Oct 29 2020
+Copyright (c) 2020 Ceyentra TechNologies
+APPLAB */
+
+@import "../../assets//scss/colors.scss";
+
+.flex-container {
+  display: flex;
+ // justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: $main-bg;
+  // background: repeating-radial-gradient(
+  //   circle at 0 0,
+  //   $theme-color1,
+  //   $theme-color2 50%
+  // );
+
+  .logo-cont {
+    text-align: center;
+    max-width: 600px;
+    min-width: 100px;
+
+  }
+  .login-label{
+    text-align: left !important;
+  }
+  .login-input{
+    width: 100%;
+    outline: none !important;
+    
+  }
+  .logo-col {
+   
+    background: white !important;
+    border: 3px solid rgba(243, 238, 233, 0.911) !important;
+    box-shadow: 3px 1px 10px 2px #afaaaa !important;
+    border-radius: 10px !important;
+  }
+.show-icon{
+  position: absolute;
+  right: 30px;
+  text-indent: 32px;
+  bottom: 80px;
+
+}
+  .logo {
+    width: 150px;
+    height: 150px;
+
+  }
+}

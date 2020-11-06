@@ -1,0 +1,24 @@
+/* Created By Janitha Prashad Katukenda
+ jpk Created on Thu Oct 29 2020
+Copyright (c) 2020 Ceyentra TechNologies
+APPLAB */
+
+@font-face {font-family: "Gilroy Bold";
+    src: url("../fonts/gilroy/Gilroy-Bold.otf"); /* IE9*/
+    src: url("../fonts/gilroy/Gilroy-Bold.otf") format("opentype"); /* IE6-IE8 */
+  }
+  @font-face {font-family: "Gilroy Medium";
+    src: url("../fonts/gilroy/Gilroy-Medium.otf"); /* IE9*/
+    src: url("../fonts/gilroy/Gilroy-Medium.otf") format("opentype"); /* IE6-IE8 */
+  }
+  @font-face {font-family: "Gilroy Medium";
+    src: url("../fonts/gilroy/Gilroy-Medium.otf"); /* IE9*/
+    src: url("../fonts/gilroy/Gilroy-Medium.otf") format("opentype"); /* IE6-IE8 */
+  }
+  @font-face {font-family: "Gilroy Light";
+    src: url("../fonts/gilroy/Gilroy-Light.otf"); /* IE9*/
+    src: url("../fonts/gilroy/Gilroy-Light.otf") format("opentype"); /* IE6-IE8 */
+  }
+
+  $common-fonts:      "Gilroy Medium"!important;
+  

@@ -1,0 +1,77 @@
+/* Created By Janitha Prashad Katukenda
+ jpk Created on Thu Oct 29 2020
+Copyright (c) 2020 Ceyentra TechNologies
+APPLAB */
+
+//view modal start..
+.modal-main {
+  min-width: 50%;
+  min-height: 80vh;
+
+  .modal-hedline {
+    font-size: 30px !important;
+    color: black !important;
+    text-align: center !important;
+    padding: 0.75rem;
+    margin-bottom: 0 !important;
+  }
+  .row-one {
+    padding: 15px !important;
+  }
+
+  .modal-img {
+    width: 100%;
+
+    height: 175px;
+    object-fit: contain;
+    /* background: #d9d9d9; */
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    
+  }
+  .modal-img-card {
+    height: 200px;
+    width: 200px;
+  }
+.more-btn{
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  :hover{
+    color:red !important;
+  }
+}
+.image-grid{
+    height: 100px;
+    width: 100px;
+    padding-bottom: 10px;
+}
+.card{
+   
+  text-align: center !important;
+  display: flex;
+  justify-content: last baseline;
+border: none !important;
+  padding: 10px;
+  background:none !important;
+ 
+}
+.more-col{
+  background: none !important;
+  border: none !important;
+}
+  .article-content {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    padding: 10px 10px;
+  }
+  .modal-tag {
+    font-size: 11px;
+    color: blue;
+  }
+  ul {
+    margin: 0!important;
+    padding: 0 15px!important;
+  }
+  //view model end....
+}
